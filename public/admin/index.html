@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="../cdn/css/halls.css">
+    <title>Rifa Online</title>
+</head>
+<body>
+    <div id="pagina">
+
+        <div id="flexbox">
+            <div class="fotos">
+                <img style="height: 200px;width: 65%;" src="../cdn/img/xj6.jpg" alt="fotomoto">
+            </div>
+
+                <div style="height:200px!important; float: right;" class="perfil">
+                    
+                    <h2 style="text-align: center;">PAINEL ADM</h2>
+                    <div class="progresso">
+                        <div class="porcentagem"><a>37.5%</a></div>
+                    </div>
+                    
+                </div>
+        </div>
+
+        <div id="configs">
+            <span class="livre"></span> <div class="txtconfig">LIVRE</div>
+            <span class="reservado"></span> <div class="txtconfig">RESERVADO</div>
+            <span class="ocupado"></span> <div class="txtconfig">PAGO</div>
+        </div>
+
+        <ul id="lista-bilhetes"></ul>
+    </div>
+    <div id="footer"><span><i class="fas fa-map-marker-alt icofooter"></i> <a>PRIMAVERA DO LESTE - MT</a></div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+<script src="../socket.io/socket.io.js"></script>
+<script src="../js/functions.js"></script>
+</body>
+</html>

@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;300;400;500;600;700;800;900&family=Nanum+Brush+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('');
+@import url('');
+@import url('');
+
+
+html,body{
+    background:#e6e6e6;
+    height: 100%;
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font: 13px Helvetica, Arial;
+}
+
+#pagina{background-color:#e6e6e6}
+#flexbox{
+    margin: 0 auto;
+    width: 65%;
+    background: #e6e6e6;
+    display: flex;
+    align-content: center;
+}
+
+#fotos, img{
+    position: relative;
+    margin-left: 10px;
+    margin-top: 10px;
+    min-width: 80%;
+    max-height: 330px;
+    border-radius: 10px;
+}
+.fotos{
+    margin-left: 15px;
+}
+
+.perfil{
+    background: #fff;
+    padding-left: 15px;
+    padding-right: 30px;
+    border-radius: 10px;
+    max-height: 330px;
+    min-width: 300px;
+    margin-top: 12px;
+}
+
+.perfil h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin-top:15px;
+    font-size: 25px;
+    color: #3CACD4;
+}
+
+.legenda{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    color: #65BCBD;
+}
+.txt{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 18px;
+    color: #B3B3B3;
+}
+
+.sorteio{
+    float: left;
+}
+
+.sorteio li{
+    float: right;
+    list-style-type: none;
+    margin-left: -30px;
+}
+
+.sorteio li:nth-child( 1 ) {
+	margin-left: 30px;
+} 
+
+.sorteio ul li {
+    display: inline;
+    margin-left: 20px;
+    font-size: 10px;
+    position: relative;
+    float: right;
+    outline: none;
+}
+
+#lista-bilhetes{
+    width:65%;
+    margin: 0 auto;
+    margin-top:50px;
+}
+
+/* LISTA DE NUMEROS */
+#lista-bilhetes li{
+    font-family: 'Commissioner', sans-serif;
+    float: left;
+    list-style-type: none;
+    color: #666666;
+    font-weight: 500;
+    text-align: center;
+    margin-left: 5px;
+    line-height: 25px;
+    height: 25px;
+    width: 25px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+#lista-bilhetes ul li{
+    display: inline;
+    margin-left: 20px;
+    font-size: 10px;
+    position: relative;
+    float: right;
+    outline: none;
+}
+
+.open{
+    padding: 6px;
+    font-weight: 600!important;
+    background: #fff;    
+    border-radius: 5px;
+}
+.closed{
+    color: #fff!important;
+    font-weight: 600!important;
+    padding: 6px;
+    background: #65BCBC;    
+    border-radius: 5px;
+}
+.reserved{
+    color: #000!important;
+    font-weight: 600!important;
+    padding: 6px;
+    background:#F7C924;
+    border-radius: 5px;
+}
+
+
+.progresso{
+    background: #9EB9D7;
+    position: absolute;
+    margin-top: 70px;
+    margin-left: -15px;
+    width: 345px;
+    height: 35px;
+}
+.porcentagem{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 35px;
+    position: absolute;
+    text-align: center;
+    background: #004D9A;
+    height: 35px ;
+    width: 45%;
+}
+.lista-bilhetes{
+    background: #cdcdcd;
+    border-radius: 5px;
+    width: 1100px;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 973px) {
+    #flexbox{
+        margin: 0 auto;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    .perfil{
+        display: flex;
+        flex-direction: column;
+        max-height: 150px;
+    }
+    .progresso{
+        margin-left: 10%;
+        width: 60%;
+    }
+    #fotos, img{
+        position: relative;
+        margin-left: 10px;
+        margin-top: 10px;
+        width: 100%!important;
+        max-height: 300px;
+        border-radius: 5px;
+    }
+    #lista-bilhetes{
+        width:90%;
+        margin-top: 50px;
+    }
+}
+
+
+#configs{
+    width: 79%;
+    margin: 0 auto;
+    float: right;
+    display: flex;
+    margin-top: 20px;
+}
+.livre{
+    float: left;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+}
+.ocupado{
+    float: left;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background: #65BCBC;
+    margin-left: 10px;
+}
+.reservado{
+    float: left;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background: #F7C924;
+    margin-left: 10px;
+}
+.txtconfig{
+    margin-left: 10px;
+    margin-left: 10px;
+    font-size: 17px;
+    font-weight: 600;
+}
+#footer {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 60px;
+    color:#666666;
+    font-weight: 700;
+    text-align: center;
+    line-height: 60px;
+}
+.icofooter{
+    font-size: 15px;
+}
+.footer a{
+    font-size: 20px;
+    margin-left: 5px;
+}
